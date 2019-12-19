@@ -9,6 +9,10 @@ class Queue:
         #First In First Out
         # Why is our DLL a good choice to store our elements?
         self.storage = DoublyLinkedList()
+    def __str__(self):
+        
+        return f"self.storage: {self.storage}"
+
 
     def enqueue(self, value):
         self.size+=1
